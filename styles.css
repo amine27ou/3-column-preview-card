@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card h1{
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 20px 0;
+}
+.container .card:nth-child(1){
+    background-color:  hsl(31, 77%, 52%);
+    width: 270px;
+    height: 400px;
+    padding: 30px;
+    color: white;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.container .card:nth-child(1) p{
+    color: rgb(245, 203, 159);
+    margin: 20px 0;
+}
+.card:nth-child(1) button{
+    color: hsl(31, 77%, 52%);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 30px 0 0 0;
+}
+.container .card:nth-child(2){
+    background-color:  hsl(184, 100%, 22%);
+    width: 270px;
+    height: 400px;
+    padding: 30px;
+    color: white;
+    
+}
+.container .card:nth-child(2) p{
+    color: rgb(99, 168, 173);
+    margin: 20px 0;
+}
+.card:nth-child(2) button{
+    color:hsl(184, 100%, 22%);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 30px 0 0 0;
+}
+.container .card:nth-child(3){
+    background-color:  hsl(179, 100%, 13%);
+    width: 270px;
+    height: 400px;
+    padding: 25px;
+    color: white;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.container .card:nth-child(3) p{
+    color: hsl(180, 22%, 37%);
+    margin: 20px 0;
+}
+.card:nth-child(3) button{
+    color:hsl(179, 100%, 13%);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 30px 0 0 0;
+}
+.card button{
+    cursor: pointer;
+    transition:all .4s;
+}
+.card:nth-child(1) button:hover{
+    color: white;
+    background-color: rgb(245, 203, 159);
+}
+.card:nth-child(2) button:hover{
+    color: white;
+    background-color: rgb(99, 168, 173);
+}
+.card:nth-child(3) button:hover{
+    color: white;
+    background-color: hsl(180, 22%, 37%);
+}
+@media(max-width:728px){
+    .container{
+        flex-direction: column;
+        
+    }
+    .container .card:nth-child(1){
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 0px;
+    }
+    .container .card:nth-child(3){
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 7px;
+    }
+    body{
+        height: 100%;
+        padding: 30px 0;
+    }
+}
